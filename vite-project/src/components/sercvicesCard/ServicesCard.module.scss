@@ -1,0 +1,21 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .cardImage {
+        width: 66px;
+    }
+
+    .headding {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 600px) {}

@@ -1,0 +1,206 @@
+@import '../../assets//variables/colors.scss';
+
+.navMenu {
+    width: 100%;
+    background-color: white;
+    height: 100VH;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+
+    .navMenuWidthCont {
+        width: 90%;
+        margin: auto;
+
+        .navMenuHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0px;
+            flex-grow: 1;
+
+            .navHeaderLogo {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+
+    .navBarList {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        padding-top: 16px;
+        width: 90%;
+        margin: auto;
+        flex-grow: 4;
+
+        .contLi {
+            display: flex;
+            justify-content: space-between;
+
+            .navLink {
+                display: flex;
+                justify-content: space-between;
+                color: #303030;
+            }
+
+            .activeMenu {
+                color: red;
+            }
+
+            .navLink:hover {
+                color: #2DD06E;
+                transition: 500ms;
+            }
+
+        }
+
+
+    }
+
+    .navBtns {
+        display: flex;
+        gap: 16px;
+        width: 90%;
+        margin: auto;
+        background-color: #FAF9F9;
+        padding: 16px 0px;
+        justify-content: space-between;
+
+        .loginBtn {
+            color: #2DD06E;
+            border-radius: 8px;
+            border: 1px solid #2DD06E;
+            padding: 16px 52px;
+            background-color: #fafafafa;
+        }
+
+        .registBtn {
+            background-color: #2DD06E;
+            border-radius: 8px;
+            border: 1px solid #2DD06E;
+            padding: 16px 52px;
+            color: white;
+            font-size: 14px;
+        }
+    }
+
+    .navHr {
+        background: #303030;
+        opacity: 0.16;
+    }
+}
+
+.closeNav {
+    transform: translate(-100%);
+    transition: all 0.5s;
+}
+
+.openNav {
+    transform: translate(0%);
+    transition: all 0.5s;
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .navHr {
+        display: none;
+    }
+
+    .closeNav {
+        transform: translate(0%);
+    }
+
+    .navMenu {
+        width: 90%;
+        background-color: transparent;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        .navMenuWidthCont {
+            width: 100%;
+            margin: auto;
+
+            .navMenuHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 0px;
+                flex-grow: 0;
+                display: none;
+
+                .navHeaderLogo {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+            }
+        }
+
+        .navBarList {
+            display: flex;
+            flex-direction: row;
+            gap: 56px;
+            padding-top: 0px;
+            width: 100%;
+            margin: auto;
+            flex-grow: 0;
+
+            .contLi {
+                display: flex;
+
+                .navLink {
+                    display: flex;
+                    justify-content: space-between;
+
+
+                }
+
+                .arrowIconSpan {
+                    display: none;
+
+                }
+            }
+
+        }
+
+        .navBtns {
+            display: flex;
+            gap: 16px;
+            width: 90%;
+            margin: auto;
+            background-color: #FAF9F9;
+            padding: 16px 0px;
+            justify-content: space-between;
+            display: none;
+
+            .loginBtn {
+                color: #2DD06E;
+                border-radius: 8px;
+                border: 1px solid #2DD06E;
+                padding: 16px 52px;
+                background-color: #fafafafa;
+            }
+
+            .registBtn {
+                background-color: #2DD06E;
+                border-radius: 8px;
+                border: 1px solid #2DD06E;
+                padding: 16px 52px;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+}

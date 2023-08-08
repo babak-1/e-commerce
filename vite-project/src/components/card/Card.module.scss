@@ -1,0 +1,99 @@
+.cardContainerLargest {
+    background-image: url("../../assets/image/cardbackimage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+
+    .cardCont {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        .cardInfo {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
+
+            .cardHeaders {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            .cardParag {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+        }
+
+        .cardImage {
+            width: 70%;
+            height: 216px;
+
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .cardContainerLargest {
+        background-image: url("../../assets/image/cardbackimage.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 100px;
+
+        .cardCont {
+            display: flex;
+            gap: 40px;
+            flex-direction: row;
+            align-items: self-start;
+            justify-content: space-between;
+            width: 90%;
+
+
+            .cardInfo {
+                order: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                text-align: start;
+                padding-top: 80px;
+
+                .cardHeaders {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        font-size: 48px;
+                    }
+                }
+
+                .cardParag {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+            }
+
+            .cardImage {
+                width: 400px;
+                height: 400px;
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {
+    .dropCont {
+        min-height: 300px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 29px;
+        width: 100vw;
+        z-index: 200;
+        left: -120px;
+        padding: 40px 75px;
+        overflow-y: hidden;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            .childLi {
+                cursor: pointer;
+                min-width: 50px;
+                max-width: 100px;
+            }
+        }
+    }
+}

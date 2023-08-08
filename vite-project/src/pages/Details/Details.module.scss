@@ -1,0 +1,281 @@
+.loadingCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.detailsContainer {
+    width: 90%;
+    margin: auto;
+
+
+
+
+    .swiperAndDetailsCont {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .swiperCont {
+            width: 60%;
+            margin: auto;
+        }
+
+        .productDetails {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .ratingAndComments {}
+
+            .xLine {}
+
+
+            .colorSelect {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .chooseColor {
+                    display: flex;
+                    gap: 10px;
+
+                    .colorCircle {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        position: relative;
+                        border: 1px solid black;
+                        cursor: pointer;
+
+                        .activeColor {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: white;
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                        }
+                    }
+
+
+                }
+            }
+
+            .memorySelect {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .memoryCont {
+                    display: flex;
+                    gap: 10px;
+
+
+                    .memoryBtn {
+                        background-color: #F2F2F2;
+                        padding: 5px;
+                        border-radius: 6px;
+                        cursor: pointer;
+                    }
+
+                    .activeMemoryBtn {
+                        background-color: #4F4F4F;
+                        color: white;
+                    }
+                }
+            }
+
+
+            .countProductCont {
+
+                display: flex;
+                gap: 20px;
+
+                .btnCount {
+                    display: flex;
+                    background-color: #F2F2F2;
+                    width: 32px;
+                    height: 32px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    cursor: pointer;
+
+                }
+
+                .btnCount:active {
+                    background-color: #dcc6c6;
+                }
+
+                .countValue {
+                    border: none;
+                    width: 20px;
+                    text-align: center;
+                }
+            }
+
+
+            .btnBasket {
+                background-color: #2DD06E;
+                border: none;
+                padding: 10px 30px;
+                border-radius: 8px;
+                color: #fff;
+                width: 100px;
+            }
+
+
+
+        }
+    }
+
+
+    .countWordAndCounter {
+        display: flex;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .detailsContainer {
+
+        .swiperAndDetailsCont {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .swiperCont {
+                width: 60%;
+            }
+
+            .productDetails {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .ratingAndComments {}
+
+                .xLine {}
+
+
+                .colorSelect {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .chooseColor {
+                        display: flex;
+                        gap: 10px;
+
+                        .colorCircle {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            position: relative;
+                            border: 1px solid black;
+                            cursor: pointer;
+
+                            .activeColor {
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: white;
+                                position: absolute;
+                                top: 4px;
+                                left: 4px;
+                            }
+                        }
+
+
+                    }
+                }
+
+                .memorySelect {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .memoryCont {
+                        display: flex;
+                        gap: 10px;
+
+
+                        .memoryBtn {
+                            background-color: #F2F2F2;
+                            padding: 5px;
+                            border-radius: 6px;
+                            cursor: pointer;
+                        }
+
+                        .activeMemoryBtn {
+                            background-color: #4F4F4F;
+                            color: white;
+                        }
+                    }
+                }
+
+
+                .countProductCont {
+
+                    display: flex;
+                    gap: 20px;
+
+                    .btnCount {
+                        display: flex;
+                        background-color: #F2F2F2;
+                        width: 32px;
+                        height: 32px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 20px;
+                        cursor: pointer;
+
+                    }
+
+                    .btnCount:active {
+                        background-color: #dcc6c6;
+                    }
+
+                    .countValue {
+                        border: none;
+                        width: 20px;
+                        text-align: center;
+                    }
+                }
+
+
+                .btnBasket {
+                    background-color: #2DD06E;
+                    border: none;
+                    padding: 14px 48px;
+                    border-radius: 8px;
+                    color: #fff;
+                    width: 200px;
+                }
+
+
+
+            }
+        }
+
+    }
+
+    .countWordAndCounter {
+        h4 {
+            display: none;
+        }
+    }
+}

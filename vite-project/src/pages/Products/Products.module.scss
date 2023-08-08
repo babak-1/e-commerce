@@ -1,0 +1,188 @@
+.productsContainer {
+
+    .productsCont {
+
+
+        .cardsAndOthers {
+
+
+            .mobileSortingAndFilter {
+                display: flex;
+                gap: 25px;
+                justify-content: center;
+                align-items: center;
+                padding: 24px 0px;
+
+                .iconAndSort {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    .hiddenH4 {
+                        visibility: hidden;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+
+                .line {
+                    border-right: 1px solid #EDF1F7;
+                    height: 31px;
+                }
+            }
+
+            .xLine {
+                border: 1px solid #EDF1F7;
+                margin-bottom: 32px;
+            }
+
+            .countFound {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: auto;
+                margin-bottom: 20px;
+
+
+
+                .selectror {
+                    position: absolute;
+                    top: 150px;
+                    left: 90px;
+
+
+                    background: none;
+                    border: none;
+                    color: #000;
+                    padding: 10px 0;
+                    text-align: center;
+                    appearance: none;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+            }
+
+            .cardsList {
+                display: flex;
+                width: 90%;
+                margin: auto;
+                flex-wrap: wrap;
+
+                .loadingCont {
+                    height: 50vh;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+            }
+
+
+            .PageTurner {
+                display: flex;
+                justify-content: center;
+                // ul {
+                //     display: flex;
+                //     justify-content: center;
+                // }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .productsContainer {
+        width: 90%;
+        margin: auto;
+
+        .productsCont {
+
+            display: flex;
+
+            .cardsAndOthers {
+                flex: 5;
+                padding-top: 20px;
+
+                .mobileSortingAndFilter {
+                    display: none;
+
+                    .iconAndSort {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        .hiddenH4 {
+                            visibility: hidden;
+                        }
+
+                        h4 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .line {
+                        border-right: 1px solid #EDF1F7;
+                        height: 31px;
+                    }
+                }
+
+                .xLine {
+                    display: none;
+                }
+
+                .countFound {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    align-items: center;
+
+
+
+                    .selectror {
+                        position: static;
+                        top: 0px;
+                        left: 0px;
+
+
+                        appearance: none;
+                        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVHgB7VIxDoIwFC11cfQIbIQNb6CbA4Q6unkEPIF6Alc34+hkwwXUE+AIk4yOjG74PjYxIU1hYetLGtrf/977/1PGLCwsBoejC8Zx/GouHWcupSxNAkKISV3XJ6wyTdNN+54buC5INwgEBnHKyWiLYoQuR2uA5Ck+UplkURQl7ZwwDIUSd7Ge1K1Oa6QL5nn+KYri4vs+jXAG8sLzPIbYQ1W+ReyI7RgmZ875CqN8a4tlHYBYApGDOlJXFdaaDojvMfedid9poEwCiF3ZbxyECh0sUfW9i9vLQJk0P70h9XhdFhYWf3wBnDxZZSSQJ4kAAAAASUVORK5CYII=) no-repeat 95% 50%;
+                        background-size: 20px 20px;
+                        border: 1px solid #bdbdbd;
+                        border-radius: 8px;
+                        color: #4f4f4f;
+                        cursor: pointer;
+                        font-size: 16px;
+                        outline: none;
+                        padding: 10px 16px;
+                        -webkit-padding-end: 35px;
+                    }
+
+                }
+
+                .cardsList {
+                    display: flex;
+                    width: 90%;
+                    margin: auto;
+                    flex-wrap: wrap;
+                    // justify-content: space-between;
+                    gap: 20px;
+
+                }
+
+
+
+            }
+        }
+    }
+
+}

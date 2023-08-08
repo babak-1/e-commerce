@@ -1,0 +1,85 @@
+@import '../../assets//variables/colors.scss';
+
+.headerInput {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .searchIcon {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+    }
+
+    .searchInput {
+        width: 100%;
+    }
+
+    .activeSearchInput {
+        width: 90%;
+    }
+
+    .cmnSearchInput {
+        height: 40px;
+        border-radius: 8px;
+        outline: none;
+        font-size: 14px;
+        border: 1px solid #E4E9F2;
+        background-color: $mobileInputColor;
+        padding-left: 55px;
+    }
+
+    .searchInput::placeholder {
+        color: $placeholderColor;
+        font-weight: 400;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+
+
+    .headerInput {
+        position: relative;
+        margin: auto;
+        width: 40%;
+        transform: translateY(-55px);
+        display: flex;
+        justify-content: space-between;
+
+        .searchIcon {
+            position: absolute;
+            top: 12px;
+            left: 16px;
+        }
+
+        .searchInput {
+            width: 100%;
+        }
+
+        .activeSearchInput {
+            width: 100%;
+        }
+
+        .cmnSearchInput {
+            height: 40px;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            border: 1px solid #E4E9F2;
+            background-color: $desktopInputColor;
+            padding-left: 55px;
+        }
+
+        .searchInput::placeholder {
+            color: $placeholderColor;
+            font-weight: 400;
+        }
+
+        .closeBtn {
+            display: none;
+        }
+    }
+}

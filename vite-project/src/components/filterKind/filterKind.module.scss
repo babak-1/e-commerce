@@ -1,0 +1,228 @@
+.filterKindCont {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0px 10px;
+
+    .filterNameCont {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .filterOptionCount {
+            color: #BBBBBB;
+            font-size: 12px;
+        }
+    }
+}
+
+.closeFilterForm {
+    display: none;
+}
+
+
+.filterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    width: 95%;
+    margin: auto;
+    gap: 16px;
+
+
+
+    .priceContainer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inputCont {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+
+        input[type="checkbox"] {
+            appearance: none;
+            height: 20px;
+            width: 20px;
+            background-color: #00D68F29;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid #2DD06E;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="checkbox"]:after {
+            content: url("../../assets/icon/tickIcon.svg");
+            display: none;
+        }
+
+        input[type="checkbox"]:hover {
+            background-color: #acb9b2;
+            transition: 850ms;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #2DD06E;
+        }
+
+        input[type="checkbox"]:checked:after {
+            display: block;
+        }
+    }
+
+    .inputContPrice {
+        position: relative;
+
+        .priceInput {
+            width: 100px;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #E0E0E0;
+            outline: none;
+        }
+
+        .iconInput {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    }
+
+    .line {
+        border-top: 1px solid #E0E0E0;
+        width: 24px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .filterKindCont {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 20px 0px 10px;
+
+        .filterNameCont {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .filterOptionCount {
+                color: #BBBBBB;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .closeFilterForm {
+        display: none;
+    }
+
+
+    .filterForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        width: 95%;
+        margin: auto;
+        gap: 16px;
+
+
+
+        .priceContainer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .inputCont {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+
+            input[type="checkbox"] {
+                appearance: none;
+                height: 20px;
+                width: 20px;
+                background-color: #00D68F29;
+                border-radius: 3px;
+                cursor: pointer;
+                border: 1px solid #2DD06E;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input[type="checkbox"]:after {
+                content: url("../../assets/icon/tickIcon.svg");
+                display: none;
+            }
+
+            input[type="checkbox"]:hover {
+                background-color: #acb9b2;
+                transition: 850ms;
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: #2DD06E;
+            }
+
+            input[type="checkbox"]:checked:after {
+                display: block;
+            }
+        }
+
+        .inputContPrice {
+            position: relative;
+
+            .priceInput {
+                width: 100px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid #E0E0E0;
+                outline: none;
+            }
+
+            .iconInput {
+                position: absolute;
+                right: 15px;
+                top: 10px;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+        }
+
+        .line {
+            border-top: 1px solid #E0E0E0;
+            width: 24px;
+        }
+
+
+    }
+
+}

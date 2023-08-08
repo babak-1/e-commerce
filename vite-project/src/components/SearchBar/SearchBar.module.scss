@@ -1,0 +1,142 @@
+@import '../../assets//variables/colors.scss';
+
+.searchDataCont::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.searchDataCont::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.searchDataCont::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(top,
+            #e4f5fc 0%,
+            #5ab15e 50%,
+            #29ce31 51%,
+            #91f65f 100%);
+}
+
+.searchDataCont {
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 99;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: scroll;
+
+
+
+
+
+
+    .searchDataItemCont {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .searchHeaderCont {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h5 {
+                font-size: 12px;
+                color: #8F9BB3;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            flex-wrap: wrap;
+
+            li {
+                font-size: 14px;
+                padding: 2px 6px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .image {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            li:hover {
+                background-color: rgb(213, 196, 196);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .searchDataCont {
+        position: relative;
+        top: -59px;
+        left: 0px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: auto;
+        background-color: #ffff;
+        z-index: 99;
+        border: 1px solid #F5F5F5;
+        border-top: none;
+        border-radius: 0px 0px 8px 8px;
+
+        .searchDataItemCont {
+            padding: 24px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            .searchHeaderCont {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                h5 {
+                    font-size: 12px;
+                    color: #8F9BB3;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 18px;
+                flex-wrap: wrap;
+
+                li {
+                    font-size: 14px;
+                    padding: 2px 6px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,104 @@
+@import '../../assets//variables/colors.scss';
+
+.searchDataCont {
+    position: absolute;
+    top: 80px;
+    width: 100vw;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 10;
+    background-color: white;
+
+    .searchDataItemCont {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        .searchHeaderCont {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h5 {
+                font-size: 12px;
+                color: #8F9BB3;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+
+            li {
+                background-color: $searchLiColor;
+                font-size: 14px;
+                padding: 2px 6px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .searchDataCont {
+        position: relative;
+        top: -59px;
+        width: 40%;
+        display: flex;
+        left: 0px;
+        flex-direction: column;
+        gap: 24px;
+        margin: auto;
+        background-color: #ffff;
+        z-index: 99;
+        border: 1px solid #F5F5F5;
+        border-top: none;
+        border-radius: 0px 0px 8px 8px;
+
+        .searchDataItemCont {
+            padding: 24px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            .searchHeaderCont {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                h5 {
+                    font-size: 12px;
+                    color: #8F9BB3;
+                }
+            }
+
+            ul {
+                display: flex;
+                gap: 18px;
+                flex-wrap: wrap;
+
+                li {
+                    background-color: $searchLiColor;
+                    font-size: 14px;
+                    padding: 2px 6px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+
+}

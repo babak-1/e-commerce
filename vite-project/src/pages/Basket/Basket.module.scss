@@ -1,0 +1,294 @@
+.BasketCont {
+    background-color: #FAF9F9;
+    padding-bottom: 90px;
+
+    .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        margin: auto;
+        gap: 24px;
+    }
+
+
+    .count {
+        padding: 40px 0px 24px 5%;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        color: #4F4F4F;
+
+
+    }
+
+    .emptyBasket {
+        background-color: #FFFFFF;
+        margin: 0px 16px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 128px 0px;
+
+        .emptyBasketText {
+            color: #BDBDBD;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .btn {
+            border-radius: 8px;
+            background: #2DD06E;
+            border: none;
+            color: #FFFFFF;
+            width: 280px;
+            height: 48px;
+        }
+
+    }
+
+
+    .cardsList {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .basketCard {
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 0px 28px;
+            gap: 16px;
+            position: relative;
+            border-radius: 8px;
+
+            .image {
+                width: 113px;
+                height: 153px;
+            }
+
+            .cardDetail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+
+
+                .counterAndOther {
+                    display: flex;
+                    gap: 30px;
+
+                    .colorAndPrice {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .colorCont {
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+
+
+                    .countProductCont {
+
+                        display: flex;
+                        gap: 20px;
+                        justify-content: center;
+                        align-items: center;
+
+                        .btnCount {
+                            display: flex;
+                            background-color: #F2F2F2;
+                            width: 32px;
+                            height: 32px;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 20px;
+                            cursor: pointer;
+
+                        }
+
+                        .btnCount:active {
+                            background-color: #dcc6c6;
+                        }
+
+                        .countValue {
+                            border: none;
+                            width: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+
+
+
+
+            .deleteBtn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    .balance {
+        display: none;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .fullBasketCont {
+        display: flex;
+        gap: 42px;
+
+        .loading {
+            width: auto;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            flex-grow: 4;
+        }
+
+        .cardsList {
+            width: auto;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            flex-grow: 4;
+
+            .basketCard {
+                background-color: #FFFFFF;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 24px 0px 28px 40px;
+                gap: 16px;
+                position: relative;
+
+                .image {
+                    width: 50px;
+                    height: 72px;
+                }
+
+                .cardDetail {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 12px;
+
+
+                    .counterAndOther {
+                        display: flex;
+                        gap: 200px;
+
+                        .colorAndPrice {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 50px;
+
+                            .colorCont {
+                                display: flex;
+                                gap: 10px;
+                            }
+                        }
+
+
+                        .countProductCont {
+
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            align-items: center;
+
+                            .btnCount {
+                                display: flex;
+                                background-color: #F2F2F2;
+                                width: 32px;
+                                height: 32px;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 20px;
+                                cursor: pointer;
+
+                            }
+
+                            .btnCount:active {
+                                background-color: #dcc6c6;
+                            }
+
+                            .countValue {
+                                border: none;
+                                width: 20px;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+                .deleteBtn {
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                }
+            }
+        }
+
+        .balance {
+            flex-grow: 2;
+            background-color: #FFFFFF;
+            height: 350px;
+            display: block;
+            padding: 32px 24px;
+            border-radius: 8px;
+            margin-right: 5%;
+
+            h1 {
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 16px;
+                    }
+
+                    .totalBalance {
+                        color: red;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+}

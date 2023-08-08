@@ -1,0 +1,68 @@
+.cardCont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardForPhoneCont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 50px;
+
+    .cardForDesktopCont2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        height: 500px;
+    }
+}
+
+.servicesCardsCont {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+    padding-top: 80px;
+}
+
+@media screen and (min-width: 600px) {
+    .cardCont {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+
+    .cardForPhoneCont {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        padding-top: 100px;
+
+
+        .cardForDesktopCont {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cardForDesktopCont2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: auto;
+        }
+    }
+
+    .servicesCardsCont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
